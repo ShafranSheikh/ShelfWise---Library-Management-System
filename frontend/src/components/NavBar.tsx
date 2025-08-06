@@ -11,9 +11,9 @@ const NavBar = () => {
         <img onClick={()=> navigate('/')} src={logoName} />
       </div>
       <ul className='flex space-x-9 font-bold '>
-        <li onClick={()=> navigate('/')} className='font-display text-[#F4EFFA]'><a href="/">Home</a></li>
-        <li onClick={()=> navigate('/addbook')} className='font-display text-[#F4EFFA]'><a href="/addbook">Add Book</a></li>
-        <li onClick={()=> navigate('/bookdetails:bookId')} className='font-display text-[#F4EFFA]'><a href="/bookdetails">Book Details</a></li>
+        <li  className='font-display text-[#F4EFFA]'><a href="/">Home</a></li>
+        <li className='font-display text-[#F4EFFA]'><a href="/addbook">Add Book</a></li>
+        <li  className='font-display text-[#F4EFFA]'><a href="/bookdetails">Login</a></li>
       </ul>
     </nav>
   )
