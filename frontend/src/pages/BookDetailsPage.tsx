@@ -12,12 +12,12 @@ const BookDetailsPage = () => {
             <div className="bg-card p-10 rounded-xl shadow-lg flex flex-col w-full max-w-5xl bg-[#F4EFFA]">
               {/* Header section */}
               <div className="w-full flex flex-row justify-between items-center">
-                <h1 className="text-3xl font-body font-bold text-center mb-0 text-[#2F184B]">
+                <h1 className="sm:text-3xl font-body font-bold text-center mb-0 text-[#2F184B] ">
                   The Great Gatasby
                 </h1>
                 <div className="space-x-4 flex p-2">
-                  <button className="border-r-2 p-4">
-                    <img src={bin} alt="" />
+                  <button className="border-r-2 p-4 ">
+                    <img src={bin} alt=""/>
                   </button>
                   <button onClick={() => setEditMode(true)} className="font-bold">UPDATE</button>
                 </div>
