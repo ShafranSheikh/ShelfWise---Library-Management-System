@@ -13,7 +13,7 @@ const NavBar = () => {
       <ul className='flex space-x-9 font-bold '>
         <li  className='font-display text-[#F4EFFA]'><a href="/">Home</a></li>
         <li className='font-display text-[#F4EFFA]'><a href="/addbook">Add Book</a></li>
-        <li  className='font-display text-[#F4EFFA]'><a href="/bookdetails">Login</a></li>
+        <li  className='font-display text-[#F4EFFA]'><a href="/login">Login</a></li>
       </ul>
     </nav>
   )
