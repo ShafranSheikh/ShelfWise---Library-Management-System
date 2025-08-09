@@ -1,10 +1,36 @@
 import Card from '../components/Card'
-import image1 from '../assets/temp/img1.png';
-import image2 from '../assets/temp/img2.png';
-import image3 from '../assets/temp/img3.png';
-import image4 from '../assets/temp/img4.png';
-import image5 from '../assets/temp/img5.png';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+
+interface Book {
+  id: number;
+  title: string;
+  author: string;
+  aboutAuthor: string;
+  bookDescription: string;
+  imageUrl?: string
+}
 const HomePage = () => {
+  const [books, setBooks] = useState([]);
+  useEffect(() => {
+  const fetchBooks = async () => {
+    try {
+      const response = await axios.get('http://localhost:5008/api/book');
+      const booksWithImages = response.data.map((book: any) => {
+        let imageUrl = '';
+        if (book.image) {
+          imageUrl = `data:image/png;base64,${book.image}`;
+        }
+        return { ...book, imageUrl };
+      });
+      setBooks(booksWithImages);
+    } catch (error) {
+      console.error('Error fetching books:', error);
+    }
+  };
+
+  fetchBooks();
+}, []);
   return (
     <>
       <div className='bg-background '>
@@ -16,11 +42,14 @@ const HomePage = () => {
       <div className='min-h-screen flex items-center justify-center bg-background '>    
         <div className='bg-card p-8 rounded-xl shadow-lg w-full max-w-7xl  my-4 mx-2 sm:mx-4 md:mx-8 lg:mx-16 xl:mx-32'>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
-            <Card imageurl={image1} title='The Great Gatsby' author='F. Scott Fitzgerald' />
-            <Card imageurl={image2} title='To Kill a Mockingbird' author='Harper Lee' />
-            <Card imageurl={image3} title='Pride and Prejudice' author='Jane Austen' />
-            <Card imageurl={image4} title='The Catcher in the Rye' author='J.D. Salinger' />
-            <Card imageurl={image5} title='Moby-Dick' author='Herman Melville' />
+          {books.length > 0 ? (
+            books.map((book : Book) => (
+              <Card key={book.id} imageurl={book.imageUrl} title={book.title} author={book.author} bookId={book.id}/>
+            ))
+          ) : (
+            <p className='text-center col-span-full text-gray-500'>No books available</p>
+          )}
+            
           </div>
         </div>
       </div>
