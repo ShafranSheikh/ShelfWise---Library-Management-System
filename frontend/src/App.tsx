@@ -6,14 +6,21 @@ import BookDetailsPage from './pages/BookDetailsPage';
 import NavBar from './components/NavBar';
 import LoginPage from './auth/LoginPage';
 import SignupPage from './auth/SignupPage';
+import ProtectedRoute from './components/ProtectedRoute';
 function App() {
   return (
     <Router>
       <NavBar/>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path='/addbook' element={<AddBookPage />} />
-        <Route path='/bookdetails' element={<BookDetailsPage />} />
+        <Route path="/" element={
+          <HomePage />
+        } />
+        <Route path='/addbook' element={
+          <ProtectedRoute><AddBookPage /></ProtectedRoute>
+        } />
+        <Route path='/bookdetails/:id' element={
+          <ProtectedRoute><BookDetailsPage /></ProtectedRoute>
+        } />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignupPage />} />
       </Routes>
