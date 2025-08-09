@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|c:\\users\\shafran\\desktop\\shelfwise-librarymanagementsystem\\backend\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8868CEC-38A5-4D9B-8E3D-74F3A6E394FD}|backend.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,67 +63,124 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Services\\BookService.cs",
-              "RelativeDocumentMoniker": "Services\\BookService.cs",
-              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Services\\BookService.cs",
-              "RelativeToolTip": "Services\\BookService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T09:39:36.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Models\\Book.cs",
-              "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T09:39:02.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T09:38:15.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T01:15:31.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "backend.csproj",
+              "Title": "backend",
               "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\backend.csproj",
               "RelativeDocumentMoniker": "backend.csproj",
               "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\backend.csproj",
               "RelativeToolTip": "backend.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-06T01:14:17.252Z",
+              "WhenOpened": "2025-08-09T15:20:41.377Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T09:39:02.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T09:38:15.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T01:15:31.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwCoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T08:15:18.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Controllers\\BookController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwH0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T11:51:10.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T07:33:39.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-08T09:55:12.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Services\\JwtService.cs",
+              "RelativeToolTip": "Services\\JwtService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAIBAwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T09:53:04.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\Shafran\\Desktop\\ShelfWise-LibraryManagementSystem\\backend\\Services\\BookService.cs",
+              "RelativeToolTip": "Services\\BookService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T09:39:36.119Z"
             }
           ]
         }
