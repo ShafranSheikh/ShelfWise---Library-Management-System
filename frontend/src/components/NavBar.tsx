@@ -3,15 +3,17 @@ import { useNavigate } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import logoName from '../assets/ShelfWise.png'
 const NavBar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to manage login status
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+  // Check if user is logged in by checking for a token in localStorage
   useEffect(() =>{
     const token = localStorage.getItem('token')
-    setIsLoggedIn(!!token); // Check if token exists to determine login status
+    setIsLoggedIn(!!token); 
   },[])
+  // Function to handle logout
   const handleLogout = ( ) => {
-    localStorage.removeItem('token'); // Remove token from local storage
-    setIsLoggedIn(false); // Update login status
-    window.location.href = '/login'; // Redirect to homepage
+    localStorage.removeItem('token'); 
+    setIsLoggedIn(false);
+    window.location.href = '/login'; 
   }
   const navigate = useNavigate();
   return (

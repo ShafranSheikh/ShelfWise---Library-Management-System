@@ -4,6 +4,7 @@ import PrimaryButton from '../components/PrimaryButton';
 import coverImage from '../assets/CoverImage.png'
 import axios from 'axios';
 const AddBookPage = () => {
+  // State to manage form errors
   const [errors, setErrors] = useState<{
     title?: string;
     author?: string;
@@ -49,6 +50,7 @@ const AddBookPage = () => {
       image: null,
       bookDescription: ''
   });
+  // Function to handle form input changes
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -60,6 +62,7 @@ const AddBookPage = () => {
       setFormData({ ...formData, [name]: value });
     }
   }
+  // Function to handle form submission
   const handleFormSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const validationErrors = validate();

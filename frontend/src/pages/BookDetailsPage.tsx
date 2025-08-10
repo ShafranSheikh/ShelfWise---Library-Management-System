@@ -9,6 +9,7 @@ const BookDetailsPage = () => {
   const {id} = useParams<{id: string}>();
   const [bookDetails, setBookDetails] = useState<any>(null);
   const [editmode, setEditMode] = useState(false);
+  // State to manage form data
   const [formData, setFormData] = useState<{
     title: string;
     author: string;
@@ -22,6 +23,8 @@ const BookDetailsPage = () => {
     image: null,
     bookDescription: ''
   });
+  
+  // Fetches and sets book details when `id` changes.
   useEffect(()=>{
     const fetchBookDetails = async () => {
       try{
@@ -45,6 +48,8 @@ const BookDetailsPage = () => {
     }
     fetchBookDetails();
   },[id])
+  
+  // function to handle input changes
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>    
   ) => {
     const { name, value } = e.target
@@ -55,6 +60,7 @@ const BookDetailsPage = () => {
       setFormData({ ...formData, [name]: value });
     }
   }
+  // Function to update book details
   const updateBook = async (e: React.FormEvent) => {
     e.preventDefault();
     const updatedFormData = new FormData();
@@ -77,6 +83,7 @@ const BookDetailsPage = () => {
       alert('Failed to update book details. Please try again.');
     }
   }
+  // Function to delete book
   const deleteBook = async () => {
     try{
       await axios.delete(`http://localhost:5008/api/book/${id}`);

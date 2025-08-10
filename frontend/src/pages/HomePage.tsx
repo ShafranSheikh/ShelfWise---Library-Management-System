@@ -12,6 +12,7 @@ interface Book {
 }
 const HomePage = () => {
   const [books, setBooks] = useState([]);
+  // Fetches books from the API and sets them in state
   useEffect(() => {
   const fetchBooks = async () => {
     try {

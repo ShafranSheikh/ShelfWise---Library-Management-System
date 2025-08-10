@@ -7,6 +7,7 @@ import PrimaryButton from '../components/PrimaryButton';
 const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    // State to manage form errors
     const [errors, setErrors] = useState<{
         email?: string;
         password?: string;
@@ -27,6 +28,7 @@ const LoginPage = () => {
         }
         return errors;
     }
+    // Function to handle form input changes
     const handleLogin = async (event: React.FormEvent) => {
     event.preventDefault();
     const validationErrors = validate();

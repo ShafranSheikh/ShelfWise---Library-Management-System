@@ -17,6 +17,7 @@ const SignupPage = () => {
     password: '',
     age: 0,
   });
+  // State to manage form errors
   const [errors, setErrors] = useState<{
         firstName?: string;
         lastName?: string;
@@ -30,32 +31,33 @@ const SignupPage = () => {
         password: '',
         age: 0
     });
-    const validate = () => {
-        const errors ={} as Record<string, string>;
-        if(!formData.firstName.trim()){
-            errors.firstName = 'First name is required';
-        }
-        if(!formData.lastName.trim()){
-            errors.lastName = 'Last name is required';
-        }
-        if(!formData.email.trim()){
-            errors.email = 'Email is required';
-        } else if(!/\S+@\S+\.\S+/.test(formData.email)){
-            errors.email = 'Email address is invalid';
-        }
-        if(!formData.password.trim()){
-            errors.password = 'Paswword is required';
-        }
-        if(isNaN(formData.age) || formData.age <= 0){
-            errors.age = 'Age must be a valid positive number';
-        }
-        return errors;
+  const validate = () => {
+    const errors ={} as Record<string, string>;
+    if(!formData.firstName.trim()){
+        errors.firstName = 'First name is required';
     }
+    if(!formData.lastName.trim()){
+        errors.lastName = 'Last name is required';
+    }
+    if(!formData.email.trim()){
+        errors.email = 'Email is required';
+    } else if(!/\S+@\S+\.\S+/.test(formData.email)){
+        errors.email = 'Email address is invalid';
+    }
+    if(!formData.password.trim()){
+        errors.password = 'Paswword is required';
+    }
+    if(isNaN(formData.age) || formData.age <= 0){
+        errors.age = 'Age must be a valid positive number';
+    }
+    return errors;
+  }
+  // Function to handle form input changes
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value} = event.target;
     setFormData({ ...formData, [name]: value });
   }
-
+  // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const validationErrors = validate();
@@ -67,7 +69,7 @@ const SignupPage = () => {
       const response = await axios.post('http://localhost:5008/api/user/register', formData);
       console.log(response.data);
       alert('Signup successful!');
-      window.location.href = '/login'; // Redirect to login page after successful signup
+      window.location.href = '/login'; 
     } catch (error) {
       console.error('Error during signup:', error);
       alert('Signup failed. Please try again.');
@@ -144,7 +146,7 @@ const SignupPage = () => {
         </p>
         </div>  
         <div className="hidden md:flex items-center justify-center w-1/2">
-            <img src={coverImage} alt="Doctor" className="max-w-full" />
+            <img src={coverImage} alt="cover" className="max-w-full" />
         </div>
       </div>
     </div>
