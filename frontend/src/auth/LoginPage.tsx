@@ -5,12 +5,35 @@ import listImg from '../assets/List_Add.png';
 import PrimaryButton from '../components/PrimaryButton';
 
 const LoginPage = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleLogin = async (event: React.FormEvent) => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [errors, setErrors] = useState<{
+        email?: string;
+        password?: string;
+        
+    }>({
+        email: '',
+        password: ''
+    });
+    const validate = () => {
+        const errors ={} as Record<string, string>;
+        if(!email.trim()){
+            errors.email = 'Email is required';
+        } else if(!/\S+@\S+\.\S+/.test(email)){
+            errors.email = 'Email address is invalid';
+        }
+        if(!password.trim()){
+            errors.password = 'Paswword is required';
+        }
+        return errors;
+    }
+    const handleLogin = async (event: React.FormEvent) => {
     event.preventDefault();
-
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+        setErrors(validationErrors);
+        return;
+    }
     try {
         const response = await axios.post('http://localhost:5008/api/user/login', { email, password });
         const { token } = response.data;
@@ -39,22 +62,24 @@ const LoginPage = () => {
             <form onSubmit={handleLogin}>
                 <label>Email Address</label>
                 <input
-                type="email"
-                className="w-full p-2 mb-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]"
+                type="text"
+                className="w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]"
                 placeholder="Enter Your Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                required
             />
+            {errors.email && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.email}</p>}
+
             <label>Password</label>
             <input
                 type="password"
-                className="w-full p-2 mb-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]"
+                className="w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]"
                 placeholder="Enter Your Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                required
             />
+            {errors.password && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.password}</p>}
+
             <div className="flex items-center justify-between mb-8">
                 <label className="flex items-center space-x-2">
                     <input type="checkbox" />

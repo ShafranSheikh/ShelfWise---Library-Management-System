@@ -17,6 +17,40 @@ const SignupPage = () => {
     password: '',
     age: 0,
   });
+  const [errors, setErrors] = useState<{
+        firstName?: string;
+        lastName?: string;
+        email?: string;
+        password?: string;
+        age?: number;
+    }>({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        age: 0
+    });
+    const validate = () => {
+        const errors ={} as Record<string, string>;
+        if(!formData.firstName.trim()){
+            errors.firstName = 'First name is required';
+        }
+        if(!formData.lastName.trim()){
+            errors.lastName = 'Last name is required';
+        }
+        if(!formData.email.trim()){
+            errors.email = 'Email is required';
+        } else if(!/\S+@\S+\.\S+/.test(formData.email)){
+            errors.email = 'Email address is invalid';
+        }
+        if(!formData.password.trim()){
+            errors.password = 'Paswword is required';
+        }
+        if(isNaN(formData.age) || formData.age <= 0){
+            errors.age = 'Age must be a valid positive number';
+        }
+        return errors;
+    }
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value} = event.target;
     setFormData({ ...formData, [name]: value });
@@ -24,6 +58,11 @@ const SignupPage = () => {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+        setErrors(validationErrors);
+        return;
+    }
     try {
       const response = await axios.post('http://localhost:5008/api/user/register', formData);
       console.log(response.data);
@@ -48,53 +87,53 @@ const SignupPage = () => {
 
             <label htmlFor="">First Name</label>
             <input type="text"
-            className='w-full p-2 mb-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
+            className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter first name'
             onChange={handleChange}
             name="firstName"
-            value={formData.firstName}
-            required 
+            value={formData.firstName} 
         />
+        {errors.firstName && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.firstName}</p>}
 
         <label htmlFor="">Last Name</label>
         <input type="text" 
-            className='w-full p-2 mb-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
+            className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter last name' 
             onChange={handleChange}
             name="lastName"
             value={formData.lastName}
-            required
         />
+        {errors.lastName && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.lastName}</p>}
 
         <label htmlFor="">Age</label>
         <input type="number" 
-            className='w-full p-2 mb-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
+            className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter age'
             onChange={handleChange}
             name="age"
-            value={formData.age}
-            required 
+            value={formData.age} 
         />
+        {errors.age && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.age}</p>}
 
         <label htmlFor="">Email Address</label>
         <input type="email" 
-            className='w-full p-2 mb-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
+            className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter email address' 
             onChange={handleChange}
             name="email"
             value={formData.email}
-            required
         />
+        {errors.email && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.email}</p>}
 
         <label htmlFor="">Password</label>
         <input type="password" 
-            className='w-full p-2 mb-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
+            className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter password'
             onChange={handleChange}
             name="password"
-            value={formData.password}
-            required 
+            value={formData.password} 
         />
+        {errors.password && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.password}</p>}
 
         <div className="flex justify-center mb-8">
             <PrimaryButton label='Sign up' type='submit' className='border-2 bg-[#2F184B] text-[#F4EFFA] hover:bg-[#F4EFFA] hover:text-[#2F184B]' />
