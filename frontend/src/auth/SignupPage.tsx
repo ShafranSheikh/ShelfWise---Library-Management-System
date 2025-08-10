@@ -85,9 +85,9 @@ const SignupPage = () => {
             <img src={listImg} alt="" />
         </div>
 
-        <form action="" className='font-body' onSubmit={handleSubmit}>
+        <form className='font-body' onSubmit={handleSubmit}>
 
-            <label htmlFor="">First Name</label>
+            <label htmlFor="firstName">First Name</label>
             <input type="text"
             className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter first name'
@@ -97,7 +97,7 @@ const SignupPage = () => {
         />
         {errors.firstName && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.firstName}</p>}
 
-        <label htmlFor="">Last Name</label>
+        <label htmlFor="lastName">Last Name</label>
         <input type="text" 
             className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter last name' 
@@ -107,7 +107,7 @@ const SignupPage = () => {
         />
         {errors.lastName && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.lastName}</p>}
 
-        <label htmlFor="">Age</label>
+        <label htmlFor="age">Age</label>
         <input type="number" 
             className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter age'
@@ -117,7 +117,7 @@ const SignupPage = () => {
         />
         {errors.age && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.age}</p>}
 
-        <label htmlFor="">Email Address</label>
+        <label htmlFor="email">Email Address</label>
         <input type="email" 
             className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter email address' 
@@ -127,7 +127,7 @@ const SignupPage = () => {
         />
         {errors.email && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.email}</p>}
 
-        <label htmlFor="">Password</label>
+        <label htmlFor="password">Password</label>
         <input type="password" 
             className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter password'
