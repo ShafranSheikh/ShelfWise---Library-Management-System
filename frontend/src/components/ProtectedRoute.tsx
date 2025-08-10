@@ -11,7 +11,7 @@ interface ProtectedRouteProps {
 
     if (!token) {
         // User is not logged in, redirect to login page
-        return <Navigate to="/" replace />;
+        return <Navigate to="/login" replace />;
     }
 
     // User is logged in, render the children (protected page)
