@@ -41,9 +41,9 @@ const LoginPage = () => {
         const { token } = response.data;
 
         if (token) {
-            localStorage.setItem('token', token);  // Save token
+            localStorage.setItem('token', token);  
             alert('Login successful!');
-            window.location.href = '/'; // Redirect to homepage or dashboard
+            window.location.href = '/';
         } else {
             alert('Login failed: No token received.');
         }

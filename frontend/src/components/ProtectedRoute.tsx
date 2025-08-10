@@ -14,7 +14,7 @@ interface ProtectedRouteProps {
         return <Navigate to="/login" replace />;
     }
 
-    // User is logged in, render the children (protected page)
+    // User is logged in, render the children 
     return <>{children}</>;
 };
 

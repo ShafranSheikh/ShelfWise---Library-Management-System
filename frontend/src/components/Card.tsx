@@ -3,7 +3,7 @@ interface CardProps {
     imageurl?: string;
     title?: string;
     author?: string;
-    bookId?: number; // Optional, if you want to pass book ID for navigation
+    bookId?: number; 
 }
 const Card = ({imageurl, title, author, bookId}:CardProps) => {
     const navigate = useNavigate();
