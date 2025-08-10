@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import PrimaryButton from './PrimaryButton';
 interface CardProps {
     imageurl?: string;
     title?: string;
@@ -19,9 +20,8 @@ const Card = ({imageurl, title, author, bookId}:CardProps) => {
         <div className='p-5'>
             <h5 className=' mb-2 text-2xl font-semibold  tracking-tight text-gray-900 dark:text-white '>{title}</h5>
             <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>{author}</p>
-            <button onClick={()=>navigate(`/bookdetails/${bookId}`)} className=' w-full inline-flex items-center justify-center px-3 py-2 bg-[#C8B1E4] text-sm font-medium text-center text-[#2F184B]  rounded-lg  hover:bg-[#2F184B] hover:text-[#C8B1E4] transition-colors duration-300'>
-                View
-            </button>
+            <PrimaryButton label="View" className="border-2 bg-[#C8B1E4] text-[#2F184B] hover:bg-[#2F184B] hover:text-[#C8B1E4] border-none" type="button" onClick={()=>navigate(`/bookdetails/${bookId}`)}/>
+            
         </div>    
     </div>
 )
