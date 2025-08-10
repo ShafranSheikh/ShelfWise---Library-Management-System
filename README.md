@@ -1,4 +1,4 @@
-# 📚 Library Management System
+# Library Management System
 
 A full-stack Library Management System developed as part of the Software Engineering Internship assignment.  
 The backend is built with **C# .NET** and **SQLite** using **Entity Framework**, while the frontend is developed with **React** and **TypeScript**.  
@@ -6,7 +6,7 @@ The project includes **JWT-based authentication** for user login and signup, wit
 
 ---
 
-## 🚀 Features
+## Features
 - Create, Read, Update, and Delete (CRUD) book records
 - JWT authentication (Login & Signup)
 - Protected routes for authenticated users
@@ -28,6 +28,7 @@ The project includes **JWT-based authentication** for user login and signup, wit
 - TypeScript
 - Axios
 - React Router
+- Tailwind CSS
 
 ---
 
@@ -53,8 +54,7 @@ Make sure you have installed:
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone <your-repo-link>
-cd <your-repo-folder>
+git clone https://github.com/ShafranSheikh/ShelfWise---Library-Management-System.git
 ```
 
 ---
@@ -95,7 +95,7 @@ cd <your-repo-folder>
 ## 🔑 Authentication Notes
 - Create a new account using the **Signup** page.
 - Login to get a JWT token — this token is automatically stored in the browser and used for authenticated requests.
-- Protected routes like **Add Book**, **Edit Book**, and **Delete Book** require authentication.
+- Protected routes like **Add Book**, **View Book Details**,**Edit Book**, and **Delete Book** require authentication.
 
 ---
 
@@ -115,3 +115,4 @@ cd <your-repo-folder>
 
 ## 📜 License
 This project was developed for internship evaluation purposes only.
+
