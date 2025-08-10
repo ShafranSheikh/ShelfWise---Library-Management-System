@@ -15,7 +15,7 @@ const SignupPage = () => {
     lastName: '',
     email: '',
     password: '',
-    age: 0,
+    age: undefined as unknown as number, 
   });
   // State to manage form errors
   const [errors, setErrors] = useState<{
@@ -29,7 +29,7 @@ const SignupPage = () => {
         lastName: '',
         email: '',
         password: '',
-        age: 0
+        age: undefined as unknown as number,
     });
   const validate = () => {
     const errors ={} as Record<string, string>;
@@ -89,6 +89,7 @@ const SignupPage = () => {
 
             <label htmlFor="firstName">First Name</label>
             <input type="text"
+                id="firstName"
             className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter first name'
             onChange={handleChange}
@@ -98,7 +99,8 @@ const SignupPage = () => {
         {errors.firstName && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.firstName}</p>}
 
         <label htmlFor="lastName">Last Name</label>
-        <input type="text" 
+        <input type="text"
+            id="lasttName" 
             className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter last name' 
             onChange={handleChange}
@@ -108,7 +110,8 @@ const SignupPage = () => {
         {errors.lastName && <p className="text-red-600 text-left font-body text-sm mb-4">{errors.lastName}</p>}
 
         <label htmlFor="age">Age</label>
-        <input type="number" 
+        <input type="number"
+            id="age" 
             className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter age'
             onChange={handleChange}
@@ -119,6 +122,7 @@ const SignupPage = () => {
 
         <label htmlFor="email">Email Address</label>
         <input type="email" 
+            id="email"
             className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter email address' 
             onChange={handleChange}
@@ -129,6 +133,7 @@ const SignupPage = () => {
 
         <label htmlFor="password">Password</label>
         <input type="password" 
+            id="password"
             className='w-full p-2 mb-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8B1E4]' 
             placeholder='Enter password'
             onChange={handleChange}
