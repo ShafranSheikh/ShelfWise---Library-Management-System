@@ -87,7 +87,7 @@ const LoginPage = () => {
                     <input type="checkbox" />
                     <span>Remember me</span>
                 </label>
-                <a href="/useremailverification" className="text-primary text-sm">
+                <a href="/error" className="text-primary text-sm">
                     Forgot Password?
                 </a>
                 </div>

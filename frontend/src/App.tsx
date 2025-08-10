@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import LoginPage from './auth/LoginPage';
 import SignupPage from './auth/SignupPage';
 import ProtectedRoute from './components/ProtectedRoute';
+import ErrorFile from './components/ErrorFile';
 function App() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function App() {
         } />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignupPage />} />
+        <Route path='/error' element={<ErrorFile />} /> 
       </Routes>
     </Router>
   )
